@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <a class="navbar-brand" href="#">
+    Angular Task Manager
+  </a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mynav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="dashboard" class="nav-link">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="about" class="nav-link">About</a>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="search"><i class="fa fa-search"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="button" class="btn btn-success my2- my-sm-0">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
